@@ -63,7 +63,7 @@ function maybe_add_admin_bar_item( $wp_admin_bar ) {
 	if ( current_user_can( 'manage_sites' ) ) {
 
 		$args['href'] = esc_url(
-			admin_url( '/network/site-info.php?id=' . $current_blog_id )
+			network_admin_url( 'site-info.php?id=' . $current_blog_id )
 		);
 	}
 
